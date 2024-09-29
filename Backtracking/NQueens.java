@@ -1,6 +1,8 @@
 public class NQueens {
     public static void main(String[] args) {
-        
+        int n = 4;
+        boolean[][] board = new boolean[n][n];
+        System.out.println(queens(board, 0));
     }
 
     static int queens(boolean[][] board, int row){
@@ -25,7 +27,16 @@ public class NQueens {
     }
 
     static void display(boolean[][] board){
-
+        for(boolean[] row: board){
+            for(boolean element : row){
+                if(element){
+                    System.out.print("Q ");
+                } else {
+                    System.out.print("X ");
+                }
+            }
+            System.out.println();
+        }
     }
 
     static boolean isSafe(boolean[][] board, int row, int col){
@@ -46,7 +57,13 @@ public class NQueens {
 
 
         // diagonal right
-        int maxRight = Ma
+        int maxRight = Math.min(row, board.length - col - 1);
+
+        for(int i = 1; i <= maxRight; i++){
+            if(board[row-i][col+i]){
+                return false;
+            }
+        }
 
         return true;
     }
