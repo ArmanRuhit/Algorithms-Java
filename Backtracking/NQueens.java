@@ -1,3 +1,27 @@
+/**
+ * This is an implementation of the N-Queens problem using backtracking.
+ * The goal of the problem is to place 'n' queens on an n x n chessboard such that 
+ * no two queens can attack each other. This means no two queens can share the same row, 
+ * column, or diagonal.
+ *
+ * Algorithm:
+ * - The `queens` function attempts to place queens row by row.
+ * - For each row, it tries to place a queen in each column and checks if it is safe to do so 
+ *   using the `isSafe` function.
+ * - If a valid placement is found (i.e., it is safe), the queen is placed and the algorithm 
+ *   proceeds to the next row (recursive call).
+ * - If placing a queen leads to a solution, the board is displayed using the `display` method.
+ * - If no valid placement exists for a particular configuration, the algorithm backtracks 
+ *   by removing the last placed queen and trying the next possible column.
+ * - The `isSafe` function checks if a queen can be safely placed by verifying the current column, 
+ *   and both diagonals (upper-left and upper-right) to ensure no other queens can attack.
+ * - The `queens` function returns the number of valid solutions found, and prints all possible 
+ *   configurations of the board.
+ *
+ * Time Complexity: O(n!) - The algorithm explores all possible queen placements.
+ * Space Complexity: O(n^2) - Space required for the board and the recursion stack.
+ */
+
 public class NQueens {
     public static void main(String[] args) {
         int n = 4;
