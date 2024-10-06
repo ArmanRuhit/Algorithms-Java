@@ -1,0 +1,2 @@
+Why tree is important?
+Ans: We can do any operation (add, remove, find) on balanced trees in O(log n) time.
