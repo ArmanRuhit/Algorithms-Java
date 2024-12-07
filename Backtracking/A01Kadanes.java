@@ -7,7 +7,6 @@ public class A01Kadanes {
     }
 
     public static int kadanes(int[] nums){
-        nums.l
         int maxSum = nums[0];
         int currentSum = 0;
 
