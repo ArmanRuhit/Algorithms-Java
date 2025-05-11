@@ -1,0 +1,21 @@
+19. Recursion Basics
+
+- What is Recursion?
+- Print numbers in decreasing order
+- Stack overflow
+- Print numbers in increasing order
+- Find Factorial of N
+- Print sum of N natural numbers
+- Print Nth Fibonacci number
+- Check if array is sorted or not
+- First Occurrence
+- Last Occurrence
+- Print x to the power n
+- Print x to the power n (Optimized)
+- Tiling Problem
+- Remove Duplicates in a String
+- Friends Pairing Problem
+- Binary Strings Problem
+- Stack Analysis - Binary Strings
+- Practice Questions
+- Solutions for Practice Qs
